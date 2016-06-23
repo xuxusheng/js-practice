@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-记住密码提示框</title>
+    <style>
+        .content {
+            text-align: center;
+        }
+        .pwd .info {
+            display: none;
+        }
+        .pwd:hover .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <form>
+            <label class="pwd">
+                <input type="checkbox">
+                两周内自动登录
+                <p class='info'>为了您的信息安全，请不要在网吧使用此功能！</p>
+            </label>
+        </form>
+    </div>
+</body>
+</html>

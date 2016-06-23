@@ -1,0 +1,93 @@
+/* 初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* 主体样式 */
+.box {
+    width: 600px;
+    margin: 50px auto;
+}
+
+/* 换肤按钮组样式 */
+.btn-change-skin  li {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    border-width: 7px;
+    border-style: solid;
+}
+.btn-red {
+    border-color: red;
+}
+.btn-green {
+    border-color: green;
+}
+.btn-black {
+    border-color: black;
+}
+
+/* 导航部分样式 */
+.navbar {
+    float: left;
+    margin-top: 6px;
+    border: 1px solid white;
+}
+
+.navbar li {
+    float: left;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+
+
+
+/* 红色皮肤 */
+.skin-red {
+    background-color: #fdd;
+}
+.skin-red .btn-change-skin li.btn-red {
+    border-width: 4px;
+}
+.skin-red .navbar {
+    background-color: red;
+}
+
+/* 绿色皮肤 */
+.skin-green {
+    background-color: #A3C5A8;
+}
+.skin-green .btn-change-skin li.btn-green {
+    border-width: 4px;
+}
+.skin-green .navbar {
+    background-color: green;
+}
+
+/* 黑色皮肤 */
+.skin-black {
+    background-color: #ccc;
+}
+.skin-black .btn-change-skin li.btn-black {
+    border-width: 4px;
+}
+.skin-black .navbar {
+    background-color: black;
+}

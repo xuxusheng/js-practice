@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-循环将div变色</title>
+    <style>
+        .content {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .div1 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-top: 20px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="button" class="changeRed" value="点击变成红色">
+        <br>
+        <div class="div1"></div>
+        <div class="div1"></div>
+        <div class="div1"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            var div1 = document.getElementsByClassName('div1');
+            var btn = document.getElementsByClassName('changeRed')[0];
+
+            btn.onclick = function() {
+                for (var i = 0; i<div1.length; i++) {
+                    div1[i].style.backgroundColor = 'red';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
