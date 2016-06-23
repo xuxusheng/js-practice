@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01-输入法</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        li { list-style-type: none; }
+        .content {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .list {
+            width: 66px;
+            border: 1px solid #9a99ff;
+            display: none;
+        }
+        .list li {
+            width: 60px;
+            padding: 3px;
+            cursor: pointer;
+        }
+        .list li:hover {
+            background-color: #ccc;
+        }
+        .list li:last-child {
+            border-top: 1px solid #9a99ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="button" value="输入法" class="btn">
+        <ul class='list'>
+            <li>手写</li>
+            <li>拼音</li>
+            <li class="close">关闭</li>
+        </ul>
+    </div>
+    <script>
+        window.onload = function() {
+            var btn = document.getElementsByClassName('btn')[0];
+            var list = document.getElementsByClassName('list')[0];
+
+            var close = document.getElementsByClassName('close')[0];
+
+            btn.onclick = function() {
+                list.style.display = 'block';
+            }
+
+            close.onclick = function() {
+                list.style.display = 'none';
+            }
+
+        }
+    </script>
+</body>
+</html>
