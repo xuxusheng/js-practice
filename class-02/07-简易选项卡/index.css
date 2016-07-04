@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    width: 500px;
+    margin: 50px auto;
+}
+.tab {
+    border: 1px solid #000;
+}
+.tab-head {
+    height: 30px;
+    background-color: #000;
+    border-bottom: 1px solid black;
+}
+.tab-head li {
+    float: left;
+    padding: 0 20px;
+    list-style-type: none;
+
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+}
+.tab-head li.active {
+    background-color: #ccc;
+    color: #000;
+}
+
+.tab-body {
+    padding: 15px 30px 15px;
+}
+.tab-body .tab-list {
+    display: none;
+}
+.tab-body .tab-list.active {
+    display: block;
+}
