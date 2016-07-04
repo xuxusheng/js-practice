@@ -1,0 +1,51 @@
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.win {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -200px;
+    width: 400px;
+    height: 200px;
+
+    border: 3px solid #f90;
+    background-color: #fff;
+}
+.win h2 {
+    display: block;
+    height: 30px;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #FC0;
+    border-bottom: 3px solid #f90
+}
+.win h2 span {
+    float: right;
+    height: 14px;
+    width: 14px;
+    margin-top: 6px;
+    margin-right: 8px;
+    cursor: pointer;
+
+    color: #f90;
+    font-size: 16px;
+    text-align: center;
+    line-height: 10px;
+    background-color: #fff;
+    border: 1px solid #f90;
+}
+
+.content {
+    text-align: center;
+}

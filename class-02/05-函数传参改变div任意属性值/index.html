@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-函数传参改变div任意属性值</title>
+    <script src="./index.js"></script>
+    <style>
+        .content {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .form-controll {
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: #000;
+            color: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="form-controll">
+            <label>属性名:<input type="text" value="background" class="property-name"></label>
+
+        </div>
+        <div class="form-controll">
+            <label>属性值:<input type="text" value="blue" class="property-value"></label>
+        </div>
+        <div class="form-controll">
+            <input type="button" value="确定" class="confirm">
+            <input type="button" value="重置" class="reset">
+        </div>
+        <div class="box">
+            在上方输入框输入"属性名"及"属性值",点击确定按钮查看效果。
+        </div>
+    </div>
+</body>
+</html>

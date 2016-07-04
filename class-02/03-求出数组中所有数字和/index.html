@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03-求出数组中所有数字的和</title>
+    <style>
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <input type="text" value="1,2,3,4,5,6,7,8,9" class="numberGroup">
+        <span>输入数字求和，数字之间用半角","分隔</span>
+        <br>
+        <input type="button" value="求和" class="plus">
+    </div>
+
+    <script>
+        window.onload = function() {
+            var numberGroup = document.getElementsByClassName("numberGroup")[0];
+            var plus = document.getElementsByClassName("plus")[0];
+
+            plus.addEventListener("click", function() {
+                var array = numberGroup.value.split(",");
+                var sum = 0;
+                for (var i in array) {
+                    sum += parseInt(array[i], 10);
+                }
+                alert(sum)
+            })
+        }
+    </script>
+</body>
+</html>

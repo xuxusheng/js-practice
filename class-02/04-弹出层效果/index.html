@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04-弹出层效果</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="win"><h2><span class="close">x</span></h2></div>
+    <div class="content">
+        <input type="button" value="弹出层" class="btn-overlay">
+    </div>
+
+    <script>
+        window.onload = function() {
+            var btnOverlay = document.getElementsByClassName("btn-overlay")[0];
+            var overlay = document.getElementsByClassName("overlay")[0];
+            var win = document.getElementsByClassName("win")[0];
+            var close = document.getElementsByClassName("close")[0];
+
+            btnOverlay.addEventListener('click', function() {
+                overlay.style.display = "block";
+                win.style.display = "block";
+            })
+
+            close.addEventListener('click', function() {
+                overlay.style.display = "none";
+                win.style.display = "none"
+            })
+
+
+        }
+    </script>
+</body>
+</html>
